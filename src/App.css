@@ -1,0 +1,119 @@
+/* write your css here */
+
+html, body{
+    overflow-x: hidden;
+}
+
+.homepage_bg{
+
+    background-image: url("./assets/Images/bghome.svg");
+}
+
+
+@media screen and (max-width:468px) {
+    .sec2_first{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+   
+
+   
+}
+
+
+@media screen and (max-width:468px) {
+    .timeLine{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:337px) {
+    .timeLine_map{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec1_code1 .typeAnimation{
+        width: 268px;
+        
+        
+    }
+
+    .sec1_code1 .code{
+        width: 100vw;
+    }
+
+
+
+    .sec1_text{
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width:708px) {
+    .sec1_code1{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto ;
+    }
+
+    .sec1_code1 .typeAnimation{
+        width: 100vw;
+        display: none;
+    }
+
+   
+
+    .sec1_code1 .numbering{
+        display: none;
+    }
+
+    
+}
+
+
+.typeAnimation .code{
+    animation: color-change 4s infinite
+}
+
+
+@keyframes color-change {
+   
+    30%{
+        color:blue
+    }
+    60%{
+        color:red
+    }
+    100%{
+        color:yellow
+    }
+    
+}
+
+
+
+.spinner{
+    width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   padding: 1.1px;
+   background: conic-gradient(#0000 10%,#474bff) content-box;
+   -webkit-mask: repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+        radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 9px));
+   -webkit-mask-composite: destination-in;
+   mask-composite: intersect;
+   animation: spinner-d55elj 1s infinite steps(10);
+}
+
+@keyframes spinner-d55elj {
+   to {
+      transform: rotate(1turn);
+   }
+}
+
+
+
