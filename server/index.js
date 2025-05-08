@@ -33,7 +33,7 @@ app.use(fileUpload({
 const cors = require('cors');
 const { urlencoded } = require('body-parser');
 app.use(cors({
-    origin: 'http://localhost:3000', // to entertain request from frontend
+    origin: 'http://localhost:3000' || 'https://insight-institute-an-ed-tech-platform-puud.vercel.app/', // to entertain request from frontend
 
 }));
 
