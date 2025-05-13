@@ -33,7 +33,7 @@ app.use(fileUpload({
 const cors = require('cors');
 const { urlencoded } = require('body-parser');
 app.use(cors({
-    origin: 'https://insight-institute-an-ed-tech-platform.vercel.app', // to entertain request from frontend
+    origin: 'https://insight-institute-an-ed-tech-platform.vercel.app' , // to entertain request from frontend
 
 }));
 

@@ -62,7 +62,7 @@ const CourseDetails = () => {
       console.log("RESULT FETCHING FULL COURSE DETAILS ", result);
 
       setCourseData(result?.data?.courseDetails);
-      
+      console.log('COURSE DATA : ',courseData)
 
 
     } catch (error) {

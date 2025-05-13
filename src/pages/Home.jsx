@@ -76,8 +76,9 @@ const Home = () => {
             position={"lg:flex-row"}
             heading={
               <div className="text-4xl font-semibold">
-                Unlock Your
+                Unlock Your {' '}
                 <HighlightText text={"coding potential"} />
+                {" "}
                 with our online courses
               </div>
             }
@@ -135,7 +136,7 @@ const Home = () => {
 
       {/* section 2 */}
 
-      <div className="bg-richblack-5 flex flex-wrap">
+      <div className="bg-richblack-5 flex flex-wrap mt-60">
         <div className="homepage_bg w-full h-[16rem] flex flex-row justify-center items-center gap-5 mb-24 flex-wrap">
           <CTAButtons active={true} linkto={"/signUp"}>
             Explore Full Catalog
@@ -147,7 +148,7 @@ const Home = () => {
           </CTAButtons>
         </div>
 
-        <div className="sec2_first flex flex-row gap-10 w-11/12 mx-auto">
+        <div className="sec2_first flex flex-row gap-10 w-[80%] mx-auto">
           <div className="w-[50%] flex flex-row gap-2 text-black text-4xl font-semibold mb-10">
             <p>
               Get the Skills you need for a{" "}

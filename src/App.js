@@ -50,7 +50,11 @@ function App() {
         <Route path="about" element={<About />} />
 
         {/* catalog */}
-        <Route path="category/:catalogName" element={<Category />} />
+        <Route path="category/:catalogName" element={
+          <PrivateRoute>
+            <Category />
+          </PrivateRoute>
+        } />
         <Route path="differentCourses/:courseId" element={ <CourseDetails/>} />
 
         {/* contact us */}

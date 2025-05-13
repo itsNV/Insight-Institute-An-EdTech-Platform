@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Navigate, useNavigate } from 'react-router-dom'
+import Error from '../../../pages/Error'
 
 export const PrivateRoute = ({children}) => {
 
@@ -10,8 +11,11 @@ export const PrivateRoute = ({children}) => {
     if (token !== null) {
         return children
     }
+    else {
+        return <Error/>
+    }
     
-    navigate('/login')
+    
     
 
 }

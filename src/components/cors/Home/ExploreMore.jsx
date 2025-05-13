@@ -17,7 +17,7 @@ const ExploreMore = () => {
     
   return (
     <div>
-      <div className="text-richblack-5  text-4xl mt-[15rem] flex justify-center gap-2 font-semibold">
+      <div className="text-richblack-5  text-4xl mt-[15rem] flex justify-center gap-2 font-semibold ">
         <p>Unlock the</p>
         <HighlightText text={"Power of Code"} />
       </div>
@@ -27,7 +27,7 @@ const ExploreMore = () => {
       </div>
 
       <div
-        className="flex flex-row gap-4 justify-center text-richblack-200 mt-10 bg-richblack-800 cursor-pointer w-[50%] mx-auto py-1 
+        className="flex flex-row gap-4 justify-center text-richblack-200 mt-10 bg-richblack-800 cursor-pointer w-[110%] mx-auto py-1 
           rounded-full "
       >
         {
@@ -58,7 +58,7 @@ const ExploreMore = () => {
           </div>
           
 
-          <div className="text-richblack-25 flex flex-row gap-6 justify-center mt-6">
+          <div className="text-richblack-25 flex flex-row gap-6 justify-center mt-6 absolute left-4">
               
         {
           course.map((ele,index) => {

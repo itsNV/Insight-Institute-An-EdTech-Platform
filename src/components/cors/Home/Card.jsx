@@ -4,7 +4,7 @@ import { PiArrowsSplitLight } from "react-icons/pi";
 const Card = ({data}) => {
   return (
       <div className='flex flex-col bg-richblack-800 mt-10 w-[25%] h-[14rem]
-      pl-6 pt-4 pr-6'>
+      pl-6 pt-4 pr-6 rounded-xl bottom-0'>
           <div>
               <p>{data.heading}</p>
               
