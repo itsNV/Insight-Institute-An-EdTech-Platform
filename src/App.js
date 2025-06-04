@@ -1,34 +1,32 @@
 import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
 import Navbar from "./components/common/Navbar";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
-import { useState } from "react";
-import ResetPasswordToken from "./components/cors/auth/ResetPasswordToken";
 import ResetPassword from "./components/cors/auth/ResetPassword";
+import ResetPasswordToken from "./components/cors/auth/ResetPasswordToken";
 import VerifyEmail from "./components/cors/auth/VerifyEmail";
+import MyProfile from "./components/cors/Dashboard/MyProfile";
+import Settings from "./components/cors/Dashboard/Settings/Settings";
 import About from "./pages/About";
 import ContactUs from "./pages/ContactUs";
-import MyProfile from "./components/cors/Dashboard/MyProfile";
-import Error from "./pages/Error";
 import Dashboard from "./pages/Dashboard";
-import Settings from "./components/cors/Dashboard/Settings/Settings";
+import Error from "./pages/Error";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
-import { PrivateRoute } from "./components/cors/auth/PrivateRoute";
 import { useSelector } from "react-redux";
+import { PrivateRoute } from "./components/cors/auth/PrivateRoute";
 import AddCourse from "./components/cors/Dashboard/AddCourse/AddCourse";
 import Publish from "./components/cors/Dashboard/AddCourse/Publish/Publish";
 import MyCourses from "./components/cors/Dashboard/MyCourses/MyCourses";
-import Category from "./pages/Category";
-import Favicon from "react-favicon";
-import PurchasedHistory from "./pages/PurchasedHistory"
-import CourseDetails from "./pages/CourseDetails";
+import ViewCourseDetails from './components/cors/ViewCourse/ViewCourseDetails';
 import Cart from "./pages/Cart";
+import Category from "./pages/Category";
+import CourseDetails from "./pages/CourseDetails";
 import EnrollCourses from "./pages/EnrollCourses";
+import PurchasedHistory from "./pages/PurchasedHistory";
 import ViewCourse from "./pages/ViewCourse";
-import ViewCourseDetails from './components/cors/ViewCourse/ViewCourseDetails'
 
 function App() {
   
@@ -36,7 +34,7 @@ function App() {
   const { user } = useSelector((state) => state.profile)
   
   return (
-    <div className="w-screen min-h-screen flex flex-col bg-richblack-900 relative">
+    <div className="w-screen min-h-screen flex flex-col bg-richblack-900 relative overflow-x-hidden">
       <Navbar />
 
       

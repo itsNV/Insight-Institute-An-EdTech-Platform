@@ -1,14 +1,14 @@
 import React from "react";
-import HighlightText from "../components/cors/Home/HighlightText";
-import CTAButtons from "../components/cors/Home/CTAButtons";
 import { FaArrowRight } from "react-icons/fa";
 import Banner from "../assets/Images/banner.mp4";
-import CodeBlocks from "../components/cors/Home/CodeBlocks";
-import FooterData from "../components/cors/Home/FooterData";
-import TimeLine from "../components/cors/Home/TimeLine";
-import LearningLanguage from "../components/cors/Home/LearningLanguage";
 import instructorImage from "../assets/Images/Instructor.png";
+import CodeBlocks from "../components/cors/Home/CodeBlocks";
+import CTAButtons from "../components/cors/Home/CTAButtons";
 import ExploreMore from "../components/cors/Home/ExploreMore";
+import FooterData from "../components/cors/Home/FooterData";
+import HighlightText from "../components/cors/Home/HighlightText";
+import LearningLanguage from "../components/cors/Home/LearningLanguage";
+import TimeLine from "../components/cors/Home/TimeLine";
 
 const Home = () => {
   return (
@@ -204,7 +204,7 @@ const Home = () => {
             <p className="text-richblack-500">Instructors from around the world teach millions of students on Insight-Institute. We provide the tools and skills to teach what you love.</p>
             
 
-            <div className="text-start flex">
+            <div className="flex gap-2 justify-center md:justify-start">
             <CTAButtons active={true} linkto={'/signUp'}>
               Start Teaching Today
               <FaArrowRight/>
