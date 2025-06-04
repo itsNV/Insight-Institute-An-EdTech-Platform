@@ -191,7 +191,7 @@ const CourseInfo = () => {
         try {
           const response = await apiConnector(
             "GET",
-            process.env.REACT_APP_BASE_URL
+            "https://insight-institute-an-edtech-platform.onrender.com/api/v1/getAllCategories"
           );
 
           if (!response.data.success) {
