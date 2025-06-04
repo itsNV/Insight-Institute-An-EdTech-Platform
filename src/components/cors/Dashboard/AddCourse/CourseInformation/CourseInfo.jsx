@@ -191,7 +191,7 @@ const CourseInfo = () => {
         try {
           const response = await apiConnector(
             "GET",
-            "http://localhost:4000/api/v1/getAllCategories"
+            process.env.REACT_APP_BASE_URL
           );
 
           if (!response.data.success) {
